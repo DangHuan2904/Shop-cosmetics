@@ -6,7 +6,7 @@
 <body>
 	<input id="huan"  type="text" />
 	
-	<button onclick="clear()">Clear</button>
+	<button type="button" onclick="add()">Clear</button>
 	<ul  id = "todo-list">
 		
 	</ul>
@@ -14,11 +14,12 @@
 	<script type="text/javascript">
 		var list = ['Hello', 'My name is Huan.'];
 
-		function clear(){
+		function add(){
 		var input = document.getElementById('huan');
-  		var newItem = input.value();
+  		var newItem = input.value;
   		list.push(newItem);
   		render();
+  		input.value = '';
 		}
 
 		function render(){
