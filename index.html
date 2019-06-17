@@ -4,32 +4,51 @@
 	<title>Test</title>
 </head>
 <body>
-	<input id="huan"  type="text" />
-	
-	<button type="button" onclick="add()">Clear</button>
-	<ul  id = "todo-list">
-		
+	<input type="text" id="searchInput" placeholder="Search by phone number..." />
+	<button id="huan">Search</button>
+	<ul id="userList">
+
 	</ul>
-	
-	<script type="text/javascript">
-		var list = ['Hello', 'My name is Huan.'];
 
-		function add(){
-		var input = document.getElementById('huan');
-  		var newItem = input.value;
-  		list.push(newItem);
-  		render();
-  		input.value = '';
+	<script type="text/javascript">{
+		var users = [
+			{ 
+		  	name: 'Thinh', 
+		    phone: '070123123'
+		  },
+		  {
+		  	name: 'Hung',
+		    phone: '080456456'
+		  },
+		  {
+		  	name: 'Hoang',
+		    phone: '090123123'
+		  }
+		];
+		var userList = document.getElementById('userList');
+		var searchInput = document.getElementById('searchInput');
+		var searchPhone =	document.getElementById('huan');
+		function render(users) {
+			var content = users.map(function(user) {
+		  	return '<li>' + user.name + ' - ' + user.phone + '</li>';
+		  	});
+		  	userList.innerHTML = content.join('');
 		}
 
-		function render(){
-			var listHTML = document.getElementById('todo-list');
-			var content = list.map(function(item){
-				return '<li>' + item + '</li>';
-			}); 
-			listHTML.innerHTML  = content.join('');
-		}
-		render();
+		render(users);
+
+		searchPhone.addEventListener('click', function(event) {
+			var content = users.map(function(user) {
+		  	if(user.phone === searchInput.value)
+		  	
+		  		return user.name;
+		  	});
+		  		
+		  		userList.innerHTML = content.join('');
+		var value = searchInput.value;
+		console.log(value);
+		});
+	}
 	</script>
 </body>
 </html>
