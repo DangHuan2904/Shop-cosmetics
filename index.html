@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test</title>
+	<meta charset="utf-8">
+	<title>Cosmetics store</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="components.css">
 </head>
 <body>
-	<input type="text" id="searchInput" placeholder="Search by phone number..." />
-	<button id="huan">Search</button>
-	<ul id="userList">
-
-	</ul>
-
-	<script type="text/javascript">{
-		var users = [
-			{ 
-		  	name: 'Thinh', 
-		    phone: '070123123'
-		  },
-		  {
-		  	name: 'Hung',
-		    phone: '080456456'
-		  },
-		  {
-		  	name: 'Hoang',
-		    phone: '090123123'
-		  }
-		];
-		var userList = document.getElementById('userList');
-		var searchInput = document.getElementById('searchInput');
-		var searchPhone =	document.getElementById('huan');
-		function render(users) {
-			var content = users.map(function(user) {
-		  	return '<li>' + user.name + ' - ' + user.phone + '</li>';
-		  	});
-		  	userList.innerHTML = content.join('');
-		}
-
-		render(users);
-
-		searchPhone.addEventListener('click', function(event) {
-			var content = users.map(function(user) {
-		  	if(user.phone === searchInput.value)
-		  	
-		  		return user.name;
-		  	});
-		  		
-		  		userList.innerHTML = content.join('');
-		var value = searchInput.value;
-		console.log(value);
-		});
-	}
-	</script>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="album-cover">
+					<img src="https://www.upsieutoc.com/images/2019/07/13/380x312_202605102_CA_HQ_February_Bespoke_photograpy_03-102925-022753.jpg">
+					
+					<h3 class="item-1">Karastase</h3>
+					<div class="item-2">
+						A game-changer in the competitive world of styling, Kérastase is at the forefront of professional hair care. Save up to 33% on the range today.
+					</div>
+					<div  class="item-3">
+						<button class="button btn btn-success" onclick="window.location.href = 'https://www.lookfantastic.com'">SHOP NOW</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="album-cover">
+					<img src="https://www.upsieutoc.com/images/2019/07/13/anti-aging-083937.jpg">
+					
+					<h3 class="item-1">La Roche Posay</h3>
+					<div class="item-2">
+						Discover La Roche-Posay – award winning skincare which has been designed and recommended by dermatologists across the world. PLUS save 25% here on lookfantastic.
+					</div>
+					<div  class="item-3">
+						<button class="button btn btn-success" onclick="window.location.href = 'https://www.lookfantastic.com'">SHOP NOW</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="album-cover">
+					<img src="https://www.upsieutoc.com/images/2019/07/13/GL_Hello_Happy19_FlawlessBrightening_GTL_Mariah_Shade11-084101.jpg">
+					<h3 class="item-1">Benefit</h3>
+					<div class="item-2">
+						Update your make-up bag with Benefit cosmetics. Save 15% PLUS select a FREE gift when you spend £35 or more.
+					</div>
+					<div  class="item-3">
+						<button class="button btn btn-success" onclick="window.location.href = 'https://www.lookfantastic.com'">SHOP NOW</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
 </body>
 </html>
