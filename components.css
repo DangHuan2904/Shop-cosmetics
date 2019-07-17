@@ -11,6 +11,24 @@
 .img{
 	height: 400px;
 }
+a{
+	color: black;
+}
+a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+
+
+.edit-item{
+	width: 380px !important;
+	height: 312px !important;
+}
+.center{
+	text-align: center;
+	padding: 20px;
+}
 
 .item{
 	padding-top: 20px !important;
@@ -29,14 +47,25 @@
 	text-align: center;
 }
 
-.item-3{
-	text-align: center;
-}
-
 .button {
 	display: inline-block;
     color: #333;
-    background-color: #f5f5f5;
+    font-size: 16px;
+    background-color: #fff;
     border-color: #333;
+    border: 1px solid #333;
+    border-radius: 0;
+    transition: background-color .2s;
+}
+button:hover{
+	background-color: #28bdb7 !important;
+    border: none;
+    border-radius: 0;
+}
 
+.button-1{
+	font-size: 16px;
+	color: #fff;
+	background-color: #28bdb7;
+	border: 1px solid #28bdb7;
 }
