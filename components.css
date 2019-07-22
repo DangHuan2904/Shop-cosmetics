@@ -46,7 +46,7 @@ a.ex4:hover,a.ex4:active{
 	padding: 20px;
 }
 
-.item{
+.item-0{
 	padding-top: 20px !important;
 	padding-bottom: 20px !important;
 }
@@ -64,6 +64,7 @@ a.ex4:hover,a.ex4:active{
 }
 
 .button {
+	translate: none !important;
 	display: inline-block;
     color: #333;
     font-size: 16px;
@@ -85,7 +86,13 @@ button:hover{
 	background-color: #28bdb7;
 	border: 1px solid #28bdb7;
 }
-
+.button-2{
+    color: #28bdb7;
+    border-color: #fff;
+}
+.inbox{
+    
+}
 .icon{
     padding: 10px;
     font-size: 20px;
@@ -97,11 +104,13 @@ button:hover{
     height: 100%;
     width: 100%;
     padding: 0px !important;
-    
     outline: 0;
 }
 div{
 	display: block;
+}
+li{
+	list-style: none;
 }
 .margin-div{
 	margin: 0px 15px;
@@ -139,7 +148,6 @@ div{
 	font-size: 18px;
 }
 .ul-li{
-	list-style: none;
 	padding-left: 0px !important;
 }
 .ul-li-1{
@@ -150,4 +158,116 @@ div{
 }
 .nav{
 	padding: 10px 16px 20px 16px;
+}
+
+.menu{
+	display: flex;
+    flex-basis: auto;
+    width: auto;
+    height: auto;
+    padding-bottom: 0;
+}
+.menu-div{
+	display: flex;
+	margin: 0;
+}
+.all-view-brands{
+	display: block;
+    bottom: auto;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+}
+.all-menu{
+	left: 0;
+    right: 0;
+    position: relative;
+    z-index: 500;
+    border: none;
+    max-width: 1180px;
+    padding: 20px 30px;
+    background-color: #fff;
+    display: table-cell;
+}
+.view-brands{
+	display: flex;
+    flex-direction: row;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    margin-left: auto;
+    margin-right: auto;
+    height: 39px;
+}
+.title-a{
+	display: inline-flex;
+    text-align: center;
+    padding: 8px 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+    pointer-events: none;
+}
+.menu-li{
+	display: inline-flex;
+	background: #eee;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #000 !important;
+    border-radius: 10px;
+}
+.carousel-indicators .active {
+    width: 11px;
+    height: 11px;
+    margin: 0px 4px;
+    background-color: #000 !important;
+}
+.carousel-indicators-item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+}
+.carousel-inner-item{
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+}
+.carousel-inner-item-2{
+    box-sizing: content-box;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+    min-width: 325px;
+}
+.left-item{
+    width: 335px;
+    height: 220px;
+    display: block;
+    left: 10%;
+    top: 45%;
+    text-align: center;
+    padding-top: 0px;
+}
+.inbox{
+    width: 50px !important;
+    height: 70px !important;
+}
+.carousel-control-center-left{
+    position: absolute;
+    top: 35%;
+
+}
+.carousel-control-center-right{
+    position: absolute;
+    top: 35%;
+    right: 0;
 }
