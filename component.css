@@ -351,13 +351,17 @@ a.main-small-title{
 	background-color: #f6f6f8;
 }
 .footer-small{
-	display: flex;
 	padding-top: 40px;
     padding-bottom: 10px;
 }
-.small-col-md-2{
-    width: 20%;
-    margin-bottom: 30px;
+
+@media (min-width: 992px){
+	.small-col-md-2{
+	width: 20%;
+}
+	.clear-bottom{
+	display: none !important;
+}
 }
 .h5-small{
 	color: #2d2a2a;
@@ -528,4 +532,17 @@ a.main-small-title{
     cursor: pointer;
     box-shadow: none;
     box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
+}
+
+.clear-bottom:before, .clear-bottom:after{
+	content: " ";
+    display: table;
+}
+.clear-bottom:after{
+	clear: both;
+}
+.font-size-14{
+	font-size: 14px;
+	padding-right: 2px;
+    display: inline-block;
 }
